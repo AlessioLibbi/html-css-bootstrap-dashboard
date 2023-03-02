@@ -15,8 +15,7 @@ body {
 }
  /* IMPOSTAZIONI NAVIGATION */
  .navbar {
-    height: 10vh;
-    position: fixed;
+    height: 80px;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,12 +55,49 @@ body {
   }
   /* IMPOSTAZIONI SIDEBAR */
   .sidebar {
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 80px);
     width: 100px;
+    background-image:url(../img/sidebar-bg.png) ;
     background-color: #051E34;
-    position: fixed;
-    top: 10vh;
-    left: 0;
   }
-  
-  
+  .sidebar ul  {
+    font-size: 1.5rem;
+    list-style: none;
+  }
+  .side-link {
+    color: white;
+  }
+  @media screen and (min-width:992px){
+    .sidebar {
+      width: 200px;
+    }
+  }
+  /* MAIN-CONTENT */
+  .main-content {
+    height: calc(100vh - 80px) ;
+    width: 100%;
+    display: flex;
+  }
+  .main-head {
+    background-color: #1B72E8;
+    color: white;
+  }
+  .badge {
+    background-color: #165BBA;
+    line-height: 1;
+  }
+  .my-white {
+    color: white;
+    text-decoration: none;
+  }
+  /* BODY-MAIN */
+  .body-main {
+    background-color: #F8F9FA;
+  }
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
+  th p {
+    margin-bottom: 0.2rem;
+  }
